@@ -1,0 +1,27 @@
+pkgbase = mkimg-git
+	pkgdesc = Generate image files in various formats.
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.r0.g0a66419696f3191ea9b1523c46d2d2072aa59060
+	pkgrel = 1
+	url = https://github.com/themartiancompany/mkimg
+	arch = any
+	groups = hip
+	groups = hip-git
+	license = AGPL3
+	checkdepends = shellcheck
+	makedepends = make
+	makedepends = curl
+	makedepends = jq
+	depends = e2fsprogs
+	depends = libcrash-bash
+	optdepends = blk-utils: swap volume support
+	optdepends = erofs-utils: 'enhanced read only file system' support
+	optdepends = luks-tools: LUKS volumes support
+	optdepends = mdadm: RAID images support
+	optdepends = mtools: FAT file system support
+	optdepends = squashfs-tools-ng: Squash file system support
+	provides = mkimg=0.0.0.0.0.0.0.0.0.0.0.0.0.1.r0.g0a66419696f3191ea9b1523c46d2d2072aa59060
+	conflicts = mkimg
+	source = mkimg.tar.gz::https://github.com/themartiancompany/mkimg/archive/refs/heads/master.tar.gz
+	sha256sums = SKIP
+
+pkgname = mkimg-git
